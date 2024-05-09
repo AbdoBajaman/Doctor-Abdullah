@@ -1,0 +1,572 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-image: url('../gallery/pexels-vidalbalielojrfotografia-3376799.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+
+}
+
+
+.navbar .navbar-nav li a.nav-link{
+    color: #fff;
+    font-size: 16px;
+    line-height: 60px;
+    padding-left: 24px;
+    padding-right: 24PX;
+    transition: all 0.5s ease;
+}
+
+
+
+.navbar .navbar-nav li a.nav-link:hover,
+.navbar .navbar-nav li a.nav-link.active{
+    color: #0575e6;
+    background-color: #fff;
+}
+
+/* main section {
+    height: 1500px;
+} */
+.noTransparent{
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+
+.noTransparent .navbar-nav li a.nav-link{
+    color: #0575e6;
+
+}
+.noTransparent .navbar-nav li a.nav-link:hover,
+.noTransparent .navbar-nav li a.nav-link.active{
+    color: #fff;
+    background-color: #0575e6;
+}
+
+.header .overlay{
+    background-color: rgba(5, 117, 230, 0.8);
+    color: #fff;
+    padding: 40px 60px;
+    transform: translateY(20%);
+}
+.header .overlay h1{
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+}
+
+.header ,.overlay h1 span{
+    font-size: 24px;
+}
+.header .overlay h2{
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.header .overlay p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #89c4ff;
+    margin-bottom: 40px;
+}
+
+.header .overlay ul{
+    margin-bottom: 40px;
+}
+.header .overlay ul li a{
+    color: #021b79;
+    font-size: 24px;
+}
+.header .personal img{
+    border: 5px solid #73ade7;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.header .overlay a.cv{
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.licence {
+    padding: 200px 0 80px;
+    background-color: #f6fbff;
+}
+.licence .licence-title{
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.licence-title h2{
+    font-size: 30px;
+    line-height: 50px;
+    color: #196dd1;
+}
+.licence-title h2::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #196dd1;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+.licence .licence-title h2 i {
+    display: block;
+}
+.licence  .timeline{
+    padding-right: 0;
+    padding-top: 45px;
+    list-style: none;
+    position: relative;
+}
+
+.licence .timeline::before{
+    content: '';
+    width: 2px;
+    height: 81%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    background-color: #196dd1;
+    transform: translateX(50%);
+}
+
+.licence .timeline .timebox{
+    background-color: #fff;
+    border: 2px solid #f4f4f5;
+
+    position: relative;
+    padding: 20px 25px;
+   width: 48%;
+}
+
+.licence .timeline .timebox h4{
+    font-size: 18px;
+    line-height: 30px;
+    color: #555;
+
+}
+
+.licence .timeline .timebox h4 span{
+    background-color: #0575e6;
+    color: #fff;
+    margin-left: 25px;
+    padding: 0 5px;
+}
+.licence .timeline .timebox p{
+    font-size: 15px;
+    line-height: 22px;
+    color: #b1b1b1;
+}
+
+.licence .timeline .timebox::after{
+    content: "";
+
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    border-left: 2px solid #f4f4f5;
+
+    border-bottom: 2px solid #f4f4f5;
+    top: 5%;
+    left: -10px;
+
+    transform: rotate(45deg);
+
+}
+
+.licence .timeline  li{
+    position: relative;
+}
+.licence .timeline li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #196dd1;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transform: translateX(50%);
+
+}
+.licence .timeline li:nth-child(even){
+    direction: ltr;
+    text-align: left;
+}
+
+.licence .timeline li:nth-child(even) .timebox::after{
+    border: 0;
+    left: auto;
+    right: -10px;
+    border-top: 2px solid #f4f4f5;
+    border-right: 2px solid #f4f4f5;
+}
+
+.licence .timeline li:nth-child(even) .timebox h4 span{
+    float: left;
+    margin-left: 0;
+    margin-right: 25px;
+}
+
+
+/* skills */
+
+
+
+.skills{
+    background-image: url('../gallery/dent.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.skills .overlay{
+    background-color: rgba(5, 117, 230, 0.7);
+    padding: 150px 0;
+}
+
+.skills .overlay .stat p{
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 30px;
+    /* text-align: center; */
+    font-family: sans-serif;
+
+}
+
+
+.skills .overlay .stat .circle canvas{
+    background-color: #eef6ff;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.skills .overlay .stat .circle{
+    position: relative;
+}
+
+.skills .overlay .stat .circle span{
+    
+  color: #0575e6;
+    position: absolute;
+    font-size: 24px;
+    top: 50%;
+    right: 25%;
+    transform: translate(50%,-50%);
+}
+@media (max-width: 767px) {
+    .col-sm-4.col-md-2.text-center {
+        /* text-align: center; */
+    }
+    .stat{
+        transform: translateX(-30%);
+    }
+    .circle {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        width: 100px; 
+        height: 100px;
+        border-radius: 50%;
+        background-color: #0575e6;
+    }
+    .circle span {
+        text-align: center;
+        margin-right: 20px;
+
+    }
+    .circle p {
+        margin-top: 5px;
+        /* margin-right: 222px;  */
+    
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .circle span {
+        text-align: center;
+        margin-right: 20px;
+
+    }
+    .circle p {
+        margin-top: 5px;
+        /* margin-right: 20px;  */
+    
+    }
+}
+@media (min-width: 992px) and (max-width: 1196px) {
+    .circle span {
+        text-align: center;
+        margin-right: 15px;
+
+    }
+    .circle p {
+        margin-top: 5px;
+        margin-right: 20px; 
+    
+    }
+}
+
+
+.gallery{
+    padding: 75px 0 90px;
+}
+.gallery .gallery-title{
+    margin-bottom: 35px;
+}
+
+.gallery .gallery-title h2{
+    line-height: 50px;
+    font-size: 30px;
+    color: #0575e6;
+}
+.gallery .container .gallery-work label{
+    font-size: 18px;
+    line-height: 35px;
+    color: #8f9899;
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 2px solid #e4eeee;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 0 7px 40px;
+    transition: all 0.5s ease;
+
+}
+.gallery .container .gallery-work label:hover{
+    color: #fff;
+    background-color: #0575e6;
+    border: 2px solid #0575e6;
+}
+.gallery .container .gallery-work .items .item{
+    margin-bottom: 25px;
+}
+.gallery .container .gallery-work .item-type-1:checked~.label-type-1,
+.gallery .container .gallery-work .item-type-2:checked~.label-type-2,
+.gallery .container .gallery-work .item-type-3:checked~.label-type-3,
+.gallery .container .gallery-work .item-type-all:checked~.label-type-all{
+    color: #fff;
+    background-color: #0575e6;
+    border: 2px solid #0575e6;
+}
+
+.gallery .container .gallery-work .item-type-1:checked~.items .item-type-1,
+.gallery .container .gallery-work .item-type-2:checked~.items .item-type-2,
+.gallery .container .gallery-work .item-type-3:checked~.items .item-type-3{
+    transform: scale(1.08);
+}
+
+.gallery .container .gallery-work .item-type-1:checked~.items .item:not(.item-type-1),
+.gallery .container .gallery-work .item-type-2:checked~.items .item:not(.item-type-2),
+.gallery .container .gallery-work .item-type-3:checked~.items .item:not(.item-type-3)
+{
+    transform: scale(0.7);
+    opacity: 0.5;
+   
+}
+
+/* contact */
+
+.contact{
+    background-image: url("../gallery/pexels-vidalbalielojrfotografia-3376799.jpg");
+     background-position: center;
+     background-size: cover;
+}
+
+.contact .overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 70px;
+}
+
+.contact .overlay .testemonials-title h3{
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.contact .overlay .testemonials .slider{
+    width: 65%;
+    margin: 0 auto 80px;
+}
+.contact .overlay .testemonials .slider .carousel-item {
+    min-height: 350px;
+}
+
+.contact .overlay .testemonials .slider .carousel-item .carousel-caption{
+    background-color: #fff;
+    width: 100%;
+    padding: 80px 70px 35px;
+    right: 0;
+}
+
+.contact .overlay .testemonials .slider .carousel-item .carousel-caption img{
+    position: absolute;
+    top: 0;
+    transform: translate(50%,-50%);
+}
+
+.contact .overlay .testemonials .slider .carousel-item .carousel-caption h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+
+}
+
+.contact .overlay .testemonials .slider .carousel-item .carousel-caption span{
+    font-size: 15px;
+    color: #9c9c9c;
+
+}
+.contact .overlay .testemonials .slider .carousel-item .carousel-caption p{
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 25px;
+    color: #b1b1b1;
+
+}
+
+.contact .overlay .testemonials .slider .carousel-item .carousel-caption li a{
+    font-size: 24px;
+    transition: all 0.5s ease;
+    color: #b2d8fe;
+
+
+}
+
+.contact .overlay .testemonials .slider .carousel-item .carousel-caption li a:hover{
+    color: #0575e6;
+}
+.contact .overlay .testemonials .slider .carousel .carousel-indicators {
+    margin-bottom: -5px;
+}
+.contact .overlay .testemonials .slider .carousel .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid #0575e6;
+
+}
+
+.contact .overlay .testemonials .slide .carousel .carousel-indicators button.active{
+    background-color: #0575e6;
+
+}
+
+.contact .overlay .testemonials .slider .carousel .carousel-control-next i,
+.contact .overlay .testemonials .slider .carousel .carousel-control-prev i{
+    padding: 10px 20px;
+    border-radius: 50%;
+    background-color: #0575e6;
+}
+.contact .overlay .testemonials .slider .carousel .carousel-control-next{
+    transform: translateX(-50%);
+}
+.contact .overlay .testemonials .slider .carousel .carousel-control-prev {
+    transform: translateX(50%);
+}
+.contact .overlay .contact-info{
+    padding: 50px;
+    background-color: #fff;
+}
+
+.contact .overlay .contact-info .contact-title{
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 35px;
+    color: #0575e6;
+
+}
+.contact .overlay .contact-info .contact-form input,
+.contact .overlay .contact-info .contact-form textarea{
+    font-size: 18px;
+    line-height: 35px;
+    border: 2px solid #f1f1f1;
+    border-radius: 3px;
+    padding-right: 45px;
+    color: #c2c2c2;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.contact .overlay .contact-info .contact-form .col-sm-6{
+    position: relative;
+}
+.contact .overlay .contact-info .contact-form .col-sm-6::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 900;
+    color: #0575e6;
+}
+
+.contact .overlay .contact-info .contact-form .col-sm-6:first-child::before{
+    /* content: "\xf1fa"; */
+}
+.contact .overlay .contact-info .contact-form .btn{
+    font-size: 24px;
+    line-height: 25px;
+    color: #0575e6;
+    background-color: #fff;
+    border: 3px solid #0575e6;
+    padding: 15px 70px;
+    border-radius: 3px;
+    max-width: 200px;
+    margin-right: 15px;
+    transition: all 0.5s ease;
+}
+.contact .overlay .contact-info .contact-form .btn:hover{
+
+color: #fff;
+background-color: #0575e6;
+}
+.contact .overlay .contact-info .contact-us li{
+    font-size: 16px;
+    line-height: 30px;
+    color: #0575e6;
+}
+.contact .overlay .contact-info .social li{
+    margin-right: 10px;
+}
+.contact .overlay .contact-info .social li a{
+    background-color: #9bc8f5;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    transition:  all 0.5S ease;
+}
+.contact .overlay .contact-info .social li a:hover{
+    background-color: #0575e6;
+}
+.contact .overlay .copy-right p{
+    font-size: 18px;
+    color: #ececec;
+    margin: 0;
+    line-height: 77px;
+    text-align: center;
+}
